@@ -1,6 +1,6 @@
 
 body{
-    background:linear-gradient(0deg, #747576, #1e1f20);
+    background:linear-gradient(0deg, #747677, #1e1f20);
     margin: 0px;
     font-family: 'Ubuntu Condensed', sans-serif;
     box-sizing: border-box;
@@ -100,6 +100,10 @@ header .nav-links li a:hover{
     grid-area: img;
 }
 
+.mainPresentacion img:hover{
+    transform: scale(1.01);
+}
+
 /*---------------------------Estilo de Mezcla-------------------------*/
 
 .mainMezcla{
@@ -133,6 +137,10 @@ header .nav-links li a:hover{
     margin-bottom: 5%;
     width: 450px;
     grid-area: img;
+}
+
+.mainMezcla img:hover{
+    transform: scale(1.01);
 }
 
 .ofertaContainer{
@@ -223,6 +231,9 @@ header .nav-links li a:hover{
     padding: 5%;
     grid-area: img;
     align-content: center;
+}
+.fotoMaster img:hover{
+    transform: scale(1.1);
 }
 
 .ofertaContainer{

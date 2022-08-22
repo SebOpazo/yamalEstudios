@@ -424,11 +424,11 @@ footer #footoindex:hover{
         padding: 5px;
         margin: 10px;
         justify-content: center;
-        font-size: 30px;
+        font-size: 2rem;
         
     }
     .mainPresentacion p{
-        font-size: 20px;
+        font-size: 1.1rem;
         text-align: center;
         width: 350px;
     }
@@ -475,7 +475,7 @@ footer #footoindex:hover{
         padding-bottom: 2%;
     }
 
-    .ofertaContent{
+    .ofertaContainer .card{
         margin: 25px;
         width: 370px;
         height: 450px;
@@ -530,38 +530,37 @@ footer #footoindex:hover{
         align-content: center;
     }
 
-    .ofertaContainer{
+    .card{
         margin: 5%;
         grid-area: card;
         align-content: center;
     }
 
-    .ofertaContentM{
-        margin-top: 0%;
-        margin: 10px;
-        width: 350px;
-        height: 400px;
-    }
+    .card .card-body{
+        margin-top: 0%;}
 
-    .ofertaContentM h3{
-        font-size: 20px;
+    .card .card-body h3{
+        font-size: 2rem;
         color: aliceblue;
     }
-    .ofertaContentM p{
+    .card .card-body p{
         margin-right: 5px;
         padding: 5px;
         width: 250px;
-        height:20px;
-        font-size: 17px;
+        height: 2rem;
+        font-size: 1rem;
         text-align: justify;
         align-items: center;
     }
     
-    .ofertaContentM a{
+    .card .card-body a{
         margin: 5px;
         font-size: 20px;
         align-content: center;
         justify-content: center;
+    }
+    .card .btn{
+        margin: 10%;
     }
 
     /*---------------------- ARTISTAS CELULARES-----------------------*/
@@ -616,9 +615,11 @@ footer #footoindex:hover{
         padding: 5px;
         justify-content: none;
         justify-content: left;
-        font-size: 24px;
+        font-size: 1rem;
     }
-
+    .carousel-item img{
+        width: 30%;
+    }
 }
 
 

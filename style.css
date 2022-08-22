@@ -10,60 +10,77 @@ body{
 /*------------------------Barra de Navegación---------------------*/
 
 header{
+    font-family: 'Ubuntu Condensed', sans-serif;
     background-color:#313638;
-    margin: 0px;
-    height: 85px;
+    height: 6rem;
     clear: both;
     content: '';
     display: flex;
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
-header h1{
+header .navbar a{
     margin-left: 15px;
-    font-size: 30px;
+    font-size: 2rem;
     color: aliceblue;
 } 
-header h1{
+header .navbar a{
     cursor: pointer;
 }
-header h1:hover{
+header .navbar a:hover{
     transform: scale(0.9);
 }
 
-header .nav-links{
+.navbar{
+    width: 100%;
+}
+
+.container-fluid{
+    display:flex;
+    align-content: flex-end;
+}
+
+
+.navbar .nav-link{
     list-style: none;
 
 }
-header .nav-links ul{
+.navbar .nav-link ul{
     margin: 10px;
     padding-top: 5px;
     
 
 }
-header .nav-links li{
+.navbar .nav-link li{
     display: inline-block;
     padding: 0 20px;
 }
-header .nav-links a{
-    font-size: 20px;
+.navbar .nav-link a{
+    font-size: 1rem;
     color: aliceblue;
     text-decoration: none;
     cursor: pointer;
 }
-header .nav-links li:hover{
+.navbar .nav-link li:hover{
     transform:scale(1.1);
 }
-header .nav-links li a:hover{
+.navbar .nav-link li a:hover{
     color: rgb(138, 140, 142);
+}
+
+.navbar .collapse{
+    background-color: #313638f7;
+    border-radius: 5px;
 }
 
 /*------------------------Estilo de  la Presentación--------------------*/
 
 
 .mainPresentacion{
+    font-family: 'Ubuntu Condensed', sans-serif;
     height: 100vh;
     margin-left: 5%;
     margin-right: 5%;
@@ -79,7 +96,7 @@ header .nav-links li a:hover{
 }
 .mainPresentacion h1{
     text-align: center;
-    font-size:  40px;
+    font-size:  3.5rem;
     color: aliceblue;
     text-shadow:  black 2px 2px 2px;
     grid-area: header;
@@ -107,6 +124,7 @@ header .nav-links li a:hover{
 /*---------------------------Estilo de Mezcla-------------------------*/
 
 .mainMezcla{
+    font-family: 'Ubuntu Condensed', sans-serif;
     margin-left: 5%;
     margin-right: 5%;
     display: grid;
@@ -121,14 +139,14 @@ header .nav-links li a:hover{
 
 .mainMezcla h2{
     color: aliceblue;
-    font-size: 50px;
+    font-size: 3.5rem;
     grid-area: header;
     text-align: right;
 }
 
 .mainMezcla p{
     color: aliceblue;
-    font-size: 24px;
+    font-size: 1.7rem;
     text-align: justify;
     grid-area: content;
     margin-bottom: 5%;
@@ -144,6 +162,7 @@ header .nav-links li a:hover{
 }
 
 .ofertaContainer{
+    font-family: 'Ubuntu Condensed', sans-serif;
     margin: 5%;
     display: flex;
     justify-content: center;
@@ -153,7 +172,7 @@ header .nav-links li a:hover{
 
 }
 
-.ofertaContent{
+.ofertaContainer .card{
     background-color: #3136389c;
     margin: 25px;
     width: 400px;
@@ -169,12 +188,12 @@ header .nav-links li a:hover{
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.ofertaContent h2{
-    font-size: 30px;
+.card h2{
+    font-size: 2rem;
     color: aliceblue;
 }
-.ofertaContent p{
-    font-size: 24px;
+.ofertaContainer .card p{
+    font-size: 1.7rem;
     color: aliceblue;
 }
 .ofertaContent img{
@@ -189,7 +208,7 @@ header .nav-links li a:hover{
     text-decoration: none;
     cursor: pointer;
 }
-.ofertaContent a:hover{
+.ofertaConatainer .card a:hover{
     color: rgb(138, 140, 142);
     opacity: 0.3;
 }
@@ -198,6 +217,7 @@ header .nav-links li a:hover{
 /*----------------------------Estilo de Mastering---------------------*/
 
 .mainMastering{
+    font-family: 'Ubuntu Condensed', sans-serif;
     margin-left: 5%;
     margin-right: 5%;
     padding: 10px 10px;
@@ -213,7 +233,7 @@ header .nav-links li a:hover{
 
 .mainMastering h3{
     color: aliceblue;
-    font-size: 50px;
+    font-size: 3.5rem;
     text-align: center;
     grid-area: header;
 }
@@ -232,45 +252,43 @@ header .nav-links li a:hover{
     grid-area: img;
     align-content: center;
 }
-.fotoMaster img:hover{
-    transform: scale(1.1);
-}
 
 .ofertaContainer{
     margin: 5%;
     align-content: center;
 }
 
-.ofertaContentM{
+.card{
+    border-color: #1e1f20;
+}
+
+.card .card-body{
     background-color: #3136389c;
-    margin: 15px;
-    width: 400px;
-    height: 500px;
-    border-radius:8px;
+    border-radius:4px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     transition: all 0.25;
 }
-.ofertaContentM:hover{
+.card:hover{
     transform:scale(1.1);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.ofertaContentM h3{
-    font-size: 20px;
+.card .card-body h3{
+    font-size: 2rem;
     color: aliceblue;
 }
-.ofertaContentM p{
-    font-size: 24px;
+.card .card-body p{
+    font-size: 1.5rem;
     color: aliceblue;
 }
-.ofertaContentM img{
+.card img{
     width: 100%;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
-.ofertaContentM a{
-    font-size: 30px;
+.card a{
+    font-size: 1.5rem;
     color: aliceblue;
     text-decoration: none;
     cursor: pointer;
@@ -281,10 +299,20 @@ header .nav-links li a:hover{
     opacity: 0.3;
 }
 
+.card .btn{
+    background-color: #313638;
+    border-color: #1e1f20;
+}
+
+.card .btn:hover{
+    color: #747677;
+    opacity: 0.3;
+}
 
 /*---------------------------Estilo de Artista------------------------*/
 
 .mainArtistas{
+    font-family: 'Ubuntu Condensed', sans-serif;
     padding: 5% 5%;
     display: flex;
 }
@@ -332,6 +360,7 @@ header .nav-links li a:hover{
 /*------------------------Estilo de Contacto---------------------*/
 
 .mainContacto{
+    font-family: 'Ubuntu Condensed', sans-serif;
     height: 700px;
     margin: 50px;
     padding: 10px 10px;
@@ -356,6 +385,7 @@ header .nav-links li a:hover{
 
 /*----------------------------Footer------------------------------*/
 footer{
+    font-family: 'Ubuntu Condensed', sans-serif;
     background-color:#313638;
     ;
     

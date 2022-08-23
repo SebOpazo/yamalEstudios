@@ -535,6 +535,29 @@ footer #footoindex:hover{
         ;
     }
     
+    .landing{
+        font-family: 'Ubuntu Condensed', sans-serif;   
+        margin: 0;
+        width: 100%;
+        height: 32%;
+        text-align: center;
+        background-color: #00000082;
+    }
+    .landing h1{
+        margin: 5vh;
+        color: aliceblue;
+        text-shadow: #1e1f20;
+        font-size: 2rem;
+    }
+    
+    .landing a{
+        border-color:aliceblue;
+        font-size: 2rem;
+        color: aliceblue;
+        text-decoration: none;
+        z-index: 0;
+    }
+    
     .mainMastering h3{
         margin-top: 5%;
         margin-bottom: 5px;

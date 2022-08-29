@@ -1,0 +1,131 @@
+body {
+  background: linear-gradient(0deg, #747677, #1e1f20);
+  margin: 0px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  box-sizing: border-box;
+  size: 100vh; }
+
+header {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  background-color: #313638;
+  height: 6rem;
+  clear: both;
+  content: '';
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100; }
+  header .navbar {
+    width: 100%; }
+    header .navbar .collapse {
+      background-color: #313638f7;
+      border-radius: 5px; }
+    header .navbar a {
+      margin-left: 15px;
+      font-size: 2rem;
+      color: aliceblue;
+      cursor: pointer; }
+      header .navbar a:hover {
+        transform: scale(0.9); }
+
+.container-fluid {
+  display: flex;
+  align-content: flex-end; }
+
+.navbar .nav-link {
+  list-style: none; }
+  .navbar .nav-link ul {
+    margin: 10px;
+    padding-top: 5px; }
+    .navbar .nav-link ul li {
+      display: inline-block;
+      padding: 0 20px; }
+      .navbar .nav-link ul li:hover {
+        transform: scale(1.1); }
+      .navbar .nav-link ul li:hover {
+        transform: scale(1.1); }
+        .navbar .nav-link ul li:hover:hover {
+          color: #8a8c8e; }
+  .navbar .nav-link a {
+    font-size: 1rem;
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer; }
+
+ul {
+  padding: 0%; }
+
+.landing {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 114.8%;
+  position: absolute;
+  text-align: center;
+  background-color: #00000082; }
+  .landing h1 {
+    margin: 30vh;
+    color: aliceblue;
+    text-shadow: #1e1f20;
+    font-size: 6rem; }
+  .landing a {
+    border-color: aliceblue;
+    font-size: 4rem;
+    color: aliceblue;
+    text-decoration: none;
+    z-index: 0; }
+    .landing a p {
+      z-index: 0;
+      cursor: pointer; }
+
+.videoBackground {
+  width: 100%;
+  box-shadow: #000000; }
+
+.mainPresentacion {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  height: 100vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30% 70%;
+  gap: 1em;
+  grid-template-areas: "header header header" "content content img" "content content img"; }
+  .mainPresentacion h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: aliceblue;
+    text-shadow: black 2px 2px 2px;
+    grid-area: header; }
+  .mainPresentacion p {
+    color: aliceblue;
+    text-shadow: black 2px 2px 2px;
+    font-size: 24px;
+    text-align: justify;
+    height: 350px;
+    width: 700px;
+    grid-area: content; }
+  .mainPresentacion img {
+    margin: 5%;
+    width: 400px;
+    grid-area: img; }
+    .mainPresentacion img:hover {
+      transform: scale(1.01); }
+
+footer {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  background-color: #313638;
+  padding: 20px;
+  display: flex; }
+  footer a {
+    margin-right: 2%;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer; }
+
+footer #footoindex:hover {
+  color: #8a8c8e; }

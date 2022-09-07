@@ -1,0 +1,64 @@
+header{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background-color:#313638;
+    height: 6rem;
+    clear: both;
+    content: '';
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .navbar{
+        width: 100%;
+        .collapse{
+            background-color: #313638f7;
+            border-radius: 5px;
+            }
+            a{
+            margin-left: 15px;
+            font-size: 2rem;
+            color: aliceblue;
+            cursor: pointer;
+                &:hover{
+                    transform: scale(0.9);
+            }
+        }
+    }
+}
+
+.container-fluid{
+    display:flex;
+    align-content: flex-end;
+}
+
+.navbar .nav-link{
+    list-style: none;
+        ul{
+        margin: 10px;
+        padding-top: 5px;
+            li{
+            display: inline-block;
+            padding: 0 20px;
+                &:hover{
+                transform:scale(1.1);
+                }
+                &:hover{
+                    transform:scale(1.1);
+                    &:hover{
+                    color: rgb(138, 140, 142);
+                }
+                }
+            }
+        }
+        a{
+            font-size: 1rem;
+            color: aliceblue;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    ul{
+        padding: 0%;
+    }

@@ -1,0 +1,41 @@
+.mainArtistas{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    padding: 5% 5%;
+    display: flex;
+    h4{
+        color: aliceblue;
+        margin-right: 100px;
+        font-size: 50px;
+    }
+}
+.artistContainer{
+    margin-left: 15%;
+    margin-top: 5%;
+    height: 600px;
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+.artistCard{ 
+    img{
+    margin: 10px;
+    width: 150px;
+    cursor: pointer;
+    box-shadow: 5px 8px 12px black;
+        &:hover{
+            transform: scale(1.1);
+        }
+        &:hover{
+            color: rgb(138, 140, 142);
+            opacity: 0.5;
+            box-shadow: 5px 8px 12px black;    
+        }
+    }
+}
+.textCard p:hover{
+    opacity: 1;
+}

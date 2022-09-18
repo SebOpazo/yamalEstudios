@@ -87,6 +87,10 @@
     }
     .card-body{
     @include tarjetaOferta;
+    background-color: #313638;
+    margin: 0%;
+    height: 300px;
+    width: 286.4px;
         h3{
             font-size: 2rem;
             color: aliceblue;

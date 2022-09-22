@@ -1,8 +1,8 @@
 @mixin tarjetaOferta {
     background-color: #3136389c;
-        margin: 25px;
-        width: 240px;
-        height: 500px;
+        margin: 3.3vh;
+        width: 32vh;
+        height: 65vh;
         border-radius:8px;
         text-align: center;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -20,6 +20,9 @@
     justify-content: space-between;
     .card{
         @include tarjetaOferta;
+        .card-img{ 
+        width: 100%;
+        }
         h2{
             font-size: 2rem;
             color: aliceblue;

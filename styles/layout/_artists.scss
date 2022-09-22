@@ -4,15 +4,15 @@
     display: flex;
     h4{
         color: aliceblue;
-        margin-right: 100px;
-        font-size: 50px;
+        font-size: 4rem;
+        margin: 1rem;
     }
 }
 .artistContainer{
     margin-left: 15%;
     margin-top: 5%;
-    height: 600px;
-    width: 850px;
+    height: 80vh;
+    width: 113vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@
 }
 .artistCard{ 
     img{
-    margin: 10px;
+    margin: 0.5rem;
     width: 150px;
     cursor: pointer;
     box-shadow: 5px 8px 12px black;

@@ -85,8 +85,8 @@ footer #footoindex:hover {
     text-align: center;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     transition: all 0.25; }
-    .ofertaContainer .card .card-img {
-      width: 100%; }
+    .ofertaContainer .card img {
+      width: 17.8rem; }
     .ofertaContainer .card h2 {
       font-size: 2rem;
       color: aliceblue; }
@@ -262,11 +262,10 @@ body {
 /*---------------------------------------------------------- M E Z C L A --------------------------------------------------------------------*/
 .mainMezcla {
   font-family: 'Ubuntu Condensed', sans-serif;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 30% 70%;
+  grid-template-rows: 30% 60%;
   gap: 1em;
   grid-template-areas: "header header header" "img    content nothing"  "img    content nothing"; }
   .mainMezcla h2 {
@@ -553,10 +552,11 @@ body {
       font-size: 1.3rem;
       text-align: center; }
     .mainPresentacion img {
-      margin-top: 5%;
-      padding: 0%;
+      margin-top: 7%;
+      padding: 5%;
       width: 50%;
-      margin-left: 25%; }
+      margin-left: 25%;
+      margin-bottom: 13%; }
   .mainMezcla {
     grid-template-columns: 1fr;
     grid-template-rows: 15% 35% 30%;

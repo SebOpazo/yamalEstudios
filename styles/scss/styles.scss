@@ -290,7 +290,7 @@ body{
         img{
             margin-bottom: 5%;
             margin-left: 10%;
-            width: 300px;
+            width: 40vh;
         }        
     }
     .ofertaContainer{
@@ -299,16 +299,16 @@ body{
         margin-bottom: 10px;
         padding-bottom: 2%;
         .card{
-            margin: 25px;
-            width: 370px;
-            height: 450px;
+            margin-top: 3.3vh;
+            width: 49vh;
+            height: 55vh;
         }
     }
     .mainMastering{
-        margin: 1rem;
-        height: 160svh;
+        margin: 0rem;
+        height: 160vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 20% 20% 5%;
+        grid-template-rows: 10% 25% 20% 5%;
         gap: 0;
         grid-template-areas: 
         "header"
@@ -317,36 +317,37 @@ body{
         "card"
         ;
         h3{
-            margin-top: 5%;
-            margin: 0.5rem;
+            margin-top: 0%;
+            margin: 0rem;
             padding: 0.2rem;
             font-size: 2rem;
             text-align: center;
         }
         p{
+            margin: 0%;
             padding: 1rem;
-            height: 10vw;
-            width: 60vh;
+            height: 15vw;
+            width: 50vh;
             font-size: 1rem;
             text-align: justify;
             text-align: center;
         }
     }
     .fotoMaster{
-        margin: 0.5rem;
+        margin: 0%;
         padding: 0%;
-        height: 70vh;
+        height: 66vh;
         img{
             padding: 0rem;
             margin:0.5rem;
-            margin: 0px;
-            width: 50vh;
+            margin: 0rem;
+            width: 45vh;
             align-content: center;
         }
     
     }
     .card{
-        margin: 11%;
+        margin-top: 5%;
         grid-area: card;
         align-content: center;
         .btn{
@@ -355,21 +356,21 @@ body{
         .card-body{
             margin-top: 0%;
             h3{
-                font-size: 2rem;
+                font-size: 1rem;
                 color: aliceblue;
             }
             p{
                 margin-right: 5px;
                 padding: 5px;
-                width: 250px;
-                height: 2rem;
-                font-size: 1rem;
+                width: 17rem;
+                height: 2.4rem;
+                font-size: 0.9rem;
                 text-align: justify;
                 align-items: center;
             }
             a{
                 margin: 5px;
-                font-size: 20px;
+                font-size: 1rem;
                 align-content: center;
                 justify-content: center;
             }
